@@ -980,7 +980,7 @@
         #n11 {
             position: absolute;
             right: 0;
-            top:53vw;
+            top:35vw;
         }
         
         #background17 {
@@ -1326,6 +1326,9 @@
     </div>
 
     <div id="background15">
+        <div style="position:absolute;">
+            <img src="./image/page7/r1.png" style="width:100vw;height:177vw">
+        </div>
         <div id="page16" class="page"></div>
         <div id="phy_font">Design Concept</div>
         <div id="back02">
@@ -1344,7 +1347,11 @@
 
     <div id="background16">
         <div id="page17" class="page"></div>
+        <div id="page18" class="page" style="position:absolute;top:50vw;"></div>
         <div id="phy_font">Physical Social Design for Lao Piao</div>
+        <div id="n11">
+            <img src="./image/page7/n11.png" style="width:62vw">
+        </div>
         <div id="n8">
             <img src="./image/page7/n8.png" style="height:1.6vw">
         </div>
@@ -1356,9 +1363,6 @@
         </div>
         <div id="n9">
             <img src="./image/page7/n9.png" style="height:1.6vw">
-        </div>
-        <div id="n11">
-            <img src="./image/page7/n11.png" style="width:62vw">
         </div>
         <div id="n10">
             <img src="./image/page7/n10.png" style="width:55vw">
@@ -1393,7 +1397,7 @@
     </div> -->
 
     <div id="background13">
-        <div id="page18" class="page"></div>
+        <div id="page19" class="page"></div>
         <div id="inter_font">Interaction Concept Introduction </div>
         <div id="howf">
             <img src="./image/page8/howf.png" style="height:1.6vw">
@@ -1404,7 +1408,7 @@
     </div>
 
     <div id="background14">
-        <div id="page19" class="page"></div>
+        <div id="page20" class="page"></div>
         <div id="user_font">User Storyboard</div>
         <div id="s">
             <img src="./image/page8/s.png" style="width:70vw">
@@ -1443,6 +1447,7 @@
         <li id="pageUlLi17" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
         <li id="pageUlLi18" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
         <li id="pageUlLi19" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
+        <li id="pageUlLi20" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
     </ul>
 
     <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
@@ -1509,8 +1514,10 @@
                     var temp = 17;
                 } else if (height < dis[19] - 1) {
                     var temp = 18;
-                } else {
+                } else if (height < dis[20] - 1) {
                     var temp = 19;
+                } else {
+                    var temp = 20;
                 }
                 for (var i = 0; i <= temp; ++i) {
                         $("#pageUlLi" + i).css("color", "#FE9476");
@@ -1586,6 +1593,9 @@
         }
         document.getElementById("pageUlLi19").onmousedown = function () {
             toPage(19);
+        }
+        document.getElementById("pageUlLi20").onmousedown = function () {
+            toPage(20);
         }
     </script>
 
