@@ -15,7 +15,7 @@
             padding-bottom: 50%;
             position: relative;
         }
-
+/* 
         #font_a {
             position: absolute;
             left: 15%;
@@ -54,7 +54,7 @@
             font-family: Helvetica Neue;
             font-weight: 350;
             color: #ED724F;
-        }
+        } */
 
         #background1 {
             width: 100%;
@@ -1004,10 +1004,10 @@
         <div id="back" style="top:0;">
             <img src="./image/main.png" style="width:100%">
         </div>
-        <div id="font_a">HIVE</div>
-        <div id="font_b">Better Socialization for Lao Piao</div>
-        <div id="font_c">Individual Project</div>
-        <div id="font_d">2021.08 — 2021.10</div>
+        <div id="font_a" style="opacity: 0">HIVE</div>
+        <div id="font_b" style="opacity: 0">Better Socialization for Lao Piao</div>
+        <div id="font_c" style="opacity: 0">Individual Project</div>
+        <div id="font_d" style="opacity: 0">2021.08 — 2021.10</div>
     </div>
 
     <div id="background1">
@@ -1597,6 +1597,105 @@
         document.getElementById("pageUlLi20").onmousedown = function () {
             toPage(20);
         }
+
+        var tar1 = {
+            position: "absolute",
+            left: "15%",
+            top: "14vw",
+            "font-size": "2.5vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "600",
+            color: "#ED724F",
+            opacity: 1
+        };
+
+        $("#font_a").css({
+            position: "absolute",
+            left: "8%",
+            top: "14vw",
+            "font-size": "2.5vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "600",
+            color: "#ED724F",
+            opacity: 0
+        });
+
+        var tar2 = {
+            position: "absolute",
+            left: "15.15%",
+            top: "17.5vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#ED724F",
+            opacity: 1
+        };
+
+        $("#font_b").css({
+            position: "absolute",
+            left: "8%",
+            top: "17.5vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#ED724F",
+            opacity: 0
+        });
+
+        var tar3 = {
+            position: "absolute",
+            left: "15.15%",
+            top: "22.5vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#ED724F",
+            opacity: 1
+        };
+
+        $("#font_c").css({
+            position: "absolute",
+            left: "15.15%",
+            top: "25vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#ED724F",
+            opacity: 0
+        });
+
+        var tar4 = {
+            position: "absolute",
+            left: "15.15%",
+            top: "24.5vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#ED724F",
+            opacity: 1
+        };
+
+        $("#font_d").css({
+            position: "absolute",
+            left: "15.15%",
+            top: "27vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#ED724F",
+            opacity: 0
+        });
+        // sleep(0.5);
+        setTimeout(function () {
+            $("#font_a").animate(tar1, 1500, "linear");
+
+            $("#font_b").animate(tar2, 1500, "linear");
+
+            $("#font_c").animate(tar3, 1500, "linear");
+
+            $("#font_d").animate(tar4, 1500, "linear");
+        }, 1000);
+
     </script>
 
 </body>
